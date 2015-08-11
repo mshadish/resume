@@ -1,4 +1,4 @@
 Matt Shadish  
 ===========  
-Master's candidate in Analytics at the University of San Francisco  
+Master's graduate in Analytics from the University of San Francisco  
 Aspiring Data Scientist
