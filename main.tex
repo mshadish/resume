@@ -1,0 +1,318 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{comment}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Matt}{Shadish}{
+\urlstyle{same} \href{https://github.com/mshadish}{https://github.com/mshadish} \\
+%\url{https://github.com/mshadish} \\
+\href{mailto:mshadish@sbcglobal.net}{mshadish@sbcglobal.net} | (925) 487-1921
+}
+
+\href{https://www.linkedin.com/in/matt-shadish/}{https://www.linkedin.com/in/matt-shadish/}
+
+\begin{comment}
+\begin{center}
+\huge\color{subheadings}\custombold{LIFELONG LEARNER}
+\end{center}
+\end{comment}
+
+\section{Experience}
+
+\runsubsection{Engage3}
+\descript{| Davis, CA \hfill Dec 2013 - Current}
+% job titles
+\location{Data Science Manager | May 2018 - Current}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+%% couple of sentences describing Engage3
+Engage3 partners with retailers to manage their competitive strategy and Price Image.  Our omnichannel Competitive Intelligence Management platform provides accurate competitive pricing data and data science-powered solutions to retailers worldwide.
+
+\sectionsep
+
+As the company grew from 10 to 100+ FTE's, I built out Engage3's Data Science and Reporting department to drive and support revenue growth. %while playing many additional core functions beyond management, including hands-on development and technical account management.
+Key responsibilities include
+\begin{tightemize}
+\item Overseeing team of 8+ Data Analysts, Scientists, and Visualization Architects responsible for supporting 67\%+ of current annual revenue through DaaS offerings
+\item Designed, developed, and implemented Comp Shop Optimization service for our CIM programs to balance competitive visibility with budget.  Reduced cost of a single \$2M program of in-store shops by over 50\% (\$1M+ cost reduction)
+\item Drove 3\% of 2018 revenue developing a new analytics offering to reverse-engineer competitor pricing strategies using 1,000,000,000+ data points; methods include unsupervised clustering and classification algorithms with \verb|Scala|, \verb|Spark|, and \verb|Python| on Amazon EMR
+\item Lead technical account manager coordinating directly with high-value enterprise clients
+\item Collaborating with CEO and CTO in Sales Engineer role to grow enterprise-level customer base
+\end{tightemize}
+
+\sectionsep
+
+
+\location{Data Science \& Analytics Lead | Aug 2015 - May 2018}
+\location{Analytics Consultant | Jun 2014 - Aug 2015}
+\location{Data Scientist | Dec 2013 - Jun 2014}
+%% start with work in 2015-2017 (instore pipeline; turnaround to Series B in 2017)
+In 2015, Engage3 pivoted to 10-15 FTE's, and I took on the role of Data Science \& Analytics Lead, during which time we turned around from a 2-week runway (2015) to closing Series B funding round (2017).
+\begin{tightemize}
+\item Designed, developed, deployed, and maintaining pipeline of in-store data collection, management, analysis, and on-demand reporting; achieved via \verb|SQL|, \verb|Python| endpoints, and \verb|bash| scripts.  System supported 50\%+ of total 2017 revenue; still currently supports 80\%+ of in-store shops
+%\item Interfaced directly with clients regularly to outline needs and requirements; regularly created and presented Tableau and Powerpoint analyses directly to clients
+\item Designed, developed, and deployed fully-automated real-time processing of 1M+ daily crawl records in Amazon Redshift and Amazon RDS Postgres; providing live self-serve competitor visibility to several customers through visuals on top of this data
+\item Deployed and actively maintained Python Flask and CherryPy endpoints for external and internal self-service automation on Amazon Elastic Beanstalk and company hardware
+%\item Created fully-automated QA system to process millions of price records hourly using Oracle PL/SQL
+\end{tightemize}
+
+
+%% bullet list point here
+%% transition to analytics (rev eng); interface directly with clients 2017-2018
+
+\sectionsep
+
+
+
+%% management role 2018-current
+%% saved cost from 2.2M to <1M via Comp Shop Optim
+%% - (team of 8) heidi, husna, zhihan, hasan, jenn, michael, christine, kevin g
+%% team is responsible for creating, maintaining, customizing all pricing deliverables, accounting for X% revenue
+%% - lead contact/technical implementation + collab with highest-value enterprise-level customer
+%% - work directly with CEO and CTO to drive initiatives with additional enterprise-level prospects
+%% - tier delivery system
+
+
+%\begin{tightemize}
+
+
+%\item Data Science \& Analytics Lead in organization of 10-15 full-time employees – we turned company around from 2-week runway (2015) to closing Series B funding round (2017)
+%\item Designed, developed, and implemented pipeline of in-store data collection, management, analysis, and on-demand reporting; achieved via SQL databases, Python processes and endpoints, and bash shell scripts; system supported 50\%+ of total 2017 revenue
+%\item Led team of 2-4 contractors and employees to scale-up data processing pipeline and reporting
+%\item Directly drove 3\% of 2017 revenue through analytics offering of reverse-engineering competitor pricing strategies using 10M+ data points; methods include unsupervised clustering and classification algorithms using Scala and Spark on Amazon EMR
+%\item Interfaced directly with clients regularly to outline client needs and requirements; created and presented Tableau and Powerpoint analyses directly to clients
+%\item Designed, developed, and deployed real-time processing of 1M+ daily crawl records in Amazon Redshift and Amazon RDS Postgres
+%\item Deployed and actively maintained 5+ Python Flask and CherryPy endpoints for external and internal needs on Amazon Elastic Beanstalk and company hardware
+%\item Created fully-automated QA system to process millions of price records hourly using Oracle PL/SQL
+
+%\end{tightemize}
+
+\sectionsep
+
+
+
+
+\runsubsection{General Electric}
+\descript{| San Ramon, CA \hfill Nov 2014 - Mar 2015}
+\location{Data Analytics Intern}
+\begin{tightemize}
+\item Created lean search tool in parts database using \verb|elasticsearch|, \verb|Python Flask|, and \verb|JavaScript|
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{ATAC}
+\descript{| Sunnyvale, CA \hfill Jun 2012 - Jun 2013}
+\location{Aviation Data Analyst}
+\begin{tightemize}
+\item Analyzed hundreds of thousands of flight data points to identify opportunities for noise and emissions reduction in standard departure/arrival routes using Microsoft Excel extensively
+\end{tightemize}
+
+
+
+
+
+
+%%%%%%%
+% EDUCATION
+%%%%%%%
+\section{Education}
+\runsubsection{University of San Francisco}
+\descript{| MS in Analytics}
+\location{2015}
+Cum. GPA: 3.88
+\sectionsep
+
+\runsubsection{University of California, Los Angeles}
+\descript{| BS in Mechanical Engineering}
+\location{2013}
+Cum. GPA: 3.75 \textbullet{} Phi Beta Kappa \textbullet{} Tau Beta Pi
+\sectionsep
+
+\section{Skills}
+\begin{minipage}[t]{.5\textwidth}
+\subsection{TOOLS \& TECHNOLOGIES}
+
+\location{AWS}
+EMR \textbullet{} Elastic Beanstalk \textbullet{} S3 \textbullet{} EC2 \textbullet{} boto
+
+\location{Azure}
+Azure App Services \textbullet{} OneDrive
+
+\location{SQL}
+Snowflake \textbullet{} PostgreSQL \textbullet{} Oracle (PL/SQL) \textbullet{} Redshift \textbullet{} MySQL
+
+\location{Tools}
+Apache Spark \textbullet{} Tableau \textbullet{} Elasticsearch \textbullet{} Redis% \textbullet{} Apache Solr
+
+\location{Project Management}
+Git \textbullet{} Assembla \textbullet{} Proofhub \textbullet{} Basecamp% Apache Subversion
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.4\textwidth}
+\subsection{LANGUAGES}
+
+\location{10,000 lines}
+Python \textbullet{} SQL
+
+\location{1,000 lines}
+Bash \textbullet{} Scala \textbullet{} \LaTeX
+
+\location{100 lines}
+JavaScript (D3.js) \textbullet{} R
+
+\end{minipage}
+
+
+
+
+
+\sectionsep
+
+
+
+%%%%%%%
+%%% PROJECTS
+%%%%%%%
+\section{PROJECTS}
+
+%% treasury yield curve
+\runsubsection{TREASURY YIELD CURVE VISUALIZATION}
+
+\location{2017 - Current}
+
+\location{\href{https://mshadish.github.io/yield-curve/}{https://github.com/mshadish/yield-curve/}}
+\begin{tightemize}
+
+\item Automatic downloading and transforming historical XML treasury yield data nightly using \verb|Python|, \verb|bash|
+
+\item Using \verb|D3.js| for interactive visualization of US Treasury yield curve over time
+
+\end{tightemize}
+
+
+\sectionsep
+
+%% lendingclub
+\runsubsection{LENDINGCLUB PORTFOLIO PERFORMANCE ANALYSIS}
+
+\location{2017 - Current}
+
+\location{\href{https://mshadish.github.io/lendingclub/}{https://github.com/mshadish/lendingclub/}}
+\begin{tightemize}
+
+\item Automatically collecting LendingClub personal portfolio data nightly and storing time-series loan data using \verb|Scala|, \verb|SQLite|, and LendingClub REST API
+
+\item Visualizing trends in borrower solvency using \verb|D3.js|
+
+\end{tightemize}
+
+
+\sectionsep
+
+
+\runsubsection{AUTOMATED FUND RECOMMENDER}
+
+\location{2015 - 2016}
+
+\location{\href{https://github.com/mshadish/morningstar-scrape/}{https://github.com/mshadish/morningstar-scrape/}}
+\begin{tightemize}
+
+\item Scraped morningstar.com daily to identify and broadcast buy/sell opportunities using \verb|Python|, \verb|cron|, SMS
+
+%\item Identified buy and sell opportunities using fundamental valuation metrics and delivered insights via SMS using Python
+
+\end{tightemize}
+
+
+\sectionsep
+
+
+\runsubsection{KAGGLE: DRIVER TELEMATICS ANALYSIS}
+
+\location{2015}
+
+\location{\href{https://github.com/mshadish/kaggle_drivers/}{https://github.com/mshadish/kaggle\_drivers/}}
+\begin{tightemize}
+
+\item Detected anomalies in driver patterns using bagged logistic regression estimator and random forest in \verb|R| and \verb|Python scikit-learn|; scored in the top 30\% of contestants out of 1500+ with an AUC of 0.85
+
+%\item Feature extraction from driver positional data using R to establish driver fingerprints
+
+\end{tightemize}
+
+
+
+
+
+
+
+
+
+
+\end{document}  \documentclass[]{article}

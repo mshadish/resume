@@ -1,4 +1,4 @@
 Matt Shadish  
 ===========  
-Master's graduate in Analytics from the University of San Francisco  
-Aspiring Data Scientist
+Data Science Manager
+Driving the full life cycle of data from acquisition to value, from copetitive retail visibility to strategic actions
